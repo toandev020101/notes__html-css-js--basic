@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghi chú</title>
+  <link rel="stylesheet" href="./assets/boxicons-2.1.0/css/boxicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/_reponsive.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="note">
+      <div class="note__add">
+        <i class='note__add-icon bx bx-plus'></i>
+        <span class="note__add-text">Thêm mới ghi chú</span>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__body">
+        <header class="body__header">
+          <h3 class="body__header-title">Thêm một ghi chú</h3>
+          <i class='body__header-closeIcon bx bx-x'></i>
+        </header>
+        <form class="body__form">
+          <label for="title" class="body__form-label">
+            <span class="body__form-title">Tiêu đề *: </span>
+            <input class="body__form-input" type="text" id="title" required />
+          </label>
+
+          <label for="content" class="body__form-label">
+            <span class="body__form-title">Nội dung *: </span>
+            <textarea class="body__form-input" id="content" required></textarea>
+          </label>
+
+          <input id="id" type="text" value="0" hidden />
+
+          <button class="body__form-submit" type="submit">Thêm ghi chú</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
